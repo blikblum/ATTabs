@@ -1732,7 +1732,7 @@ begin
     Exit
   end;
 
-  if PtInRect(FRectButtonClose, Pnt) then
+  if PtInRect(FRectButtonClose, Pnt) and (OptShowXButtons <> atbxShowNone) then
   begin
     Result:= TabIndexCloseBtn;
     Exit
